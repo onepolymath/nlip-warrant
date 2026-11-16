@@ -11,6 +11,7 @@ from __future__ import annotations
 import base64
 import hashlib
 import json
+import re
 from collections.abc import Mapping, Sequence
 
 from .errors import EncodingError
@@ -56,12 +57,12 @@ def b64url_encode(data: bytes) -> str:
 
 def b64url_decode(text: str) -> bytes:
     """Decode unpadded base64url, rejecting any character outside the URL-safe alphabet."""
-    if not text or any(c not in _B64URL for c in text) or len(text) % 4 == 1:
+    if not _B64URL.fullmatch(text) or len(text) % 4 == 1:
         raise EncodingError("invalid base64url")
     return base64.urlsafe_b64decode(text + "=" * (-len(text) % 4))
 
 
-_B64URL = frozenset("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_")
+_B64URL = re.compile(r"[A-Za-z0-9_-]+")
 
 
 def sha256_hex(data: bytes) -> str:

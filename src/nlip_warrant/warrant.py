@@ -52,7 +52,7 @@ class BlockPayload(BaseModel):
         return BLOCK_DOMAIN + canonical_json(self.wire())
 
 
-@dataclass(frozen=True, slots=True)
+@dataclass(frozen=True)
 class SignedBlock:
     payload: BlockPayload
     signature: str
@@ -60,7 +60,7 @@ class SignedBlock:
     def wire(self) -> dict[str, object]:
         return {"p": self.payload.wire(), "s": self.signature}
 
-    @property
+    @cached_property
     def block_id(self) -> str:
         """Content address of the signed block; this is what revocations and children refer to."""
         return digest(self.wire())
