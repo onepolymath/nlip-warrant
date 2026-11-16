@@ -171,8 +171,8 @@ def latex_latency(s: dict[str, Any]) -> str:
     for r in s["latency"]["by_depth"]:
         if r["depth"] in (1, 2, 3, 4, 6, 8):
             out.append(
-                f"{r['depth']} & {r['warrant_bytes']:,} & {r['verify_us']:.0f} & "
-                f"{r['ingress_us']:.0f} & {r['tool_us']:.0f} \\\\"
+                f"{r['depth']} & {r['warrant_bytes']:,} & {r['verify_us']:,.0f} & "
+                f"{r['ingress_us']:,.0f} & {r['tool_us']:.0f} \\\\"
             )
     out += [r"\bottomrule", r"\end{tabular}"]
     return "\n".join(out).replace(",", "{,}") + "\n"

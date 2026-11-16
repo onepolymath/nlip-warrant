@@ -36,6 +36,7 @@ reproduce: eval bench report demo paper   ## everything in the paper, from scrat
 
 paper:              ## compile paper/main.tex with tectonic (or latexmk if installed)
 	cd paper && (command -v tectonic >/dev/null && tectonic -X compile main.tex || latexmk -pdf main.tex)
+	cp paper/main.pdf paper/nlip-warrant.pdf
 
 web:
 	cd web && pnpm build
