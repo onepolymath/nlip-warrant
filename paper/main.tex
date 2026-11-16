@@ -2,6 +2,7 @@
 \settopmatter{printfolios=true}
 \usepackage{booktabs}
 \usepackage{needspace}
+\usepackage{float}
 \usepackage{tikz}
 \usetikzlibrary{positioning,arrows.meta,fit,backgrounds}
 \usepackage{listings}
@@ -203,7 +204,7 @@ ingress(msg): W, P := tokens(msg); eff := verify(W)
 \end{lstlisting}
 
 \section{Mapping to ECMA-434 SCOs}\label{app:sco}
-\begin{table}[h]
+\begin{table}[H]
 \caption{ECMA-434 security countermeasures served by \sys{}.}
 \small
 \begin{tabular}{@{}p{2.2cm}p{5.6cm}@{}}
@@ -222,7 +223,7 @@ SCO & \sys{} mechanism \\
 \end{table}
 
 \section{Latency Breakdown}
-\begin{table}[h]
+\begin{table}[H]
 \caption{Median cost by chain depth (2{,}000 iterations).}
 \label{tab:latency}
 \small
