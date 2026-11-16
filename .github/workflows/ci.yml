@@ -1,0 +1,111 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  python:
+    name: Python ${{ matrix.python }} · lint, mypy --strict, tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ["3.11", "3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: ${{ matrix.python }}
+          enable-cache: true
+      - run: uv sync --locked
+      - name: Lint
+        run: |
+          uv run ruff check .
+          uv run ruff format --check .
+      - name: Typecheck
+        run: uv run mypy
+      - name: Tests (coverage gate 95%)
+        run: uv run pytest --cov --cov-report=term-missing --cov-report=xml
+      - uses: actions/upload-artifact@v4
+        if: matrix.python == '3.12'
+        with:
+          name: coverage
+          path: coverage.xml
+
+  eval-smoke:
+    name: Attack suite smoke run + demo
+    runs-on: ubuntu-latest
+    needs: python
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: "3.12"
+          enable-cache: true
+      - run: uv sync --locked
+      - name: Three-agent NLIP demo (fails if any step deviates)
+        run: uv run nlip-warrant demo --no-color
+      - name: Attack suite (40 trials)
+        run: uv run python -m eval.run_attacks --trials 40 --out /tmp/smoke
+      - name: NLIP-Warrant must block every attack class
+        run: |
+          uv run python - <<'PY'
+          import json
+          data = json.load(open("/tmp/smoke/attacks.json"))
+          ours = [r for r in data["rows"] if r["defense"] == "NLIP-Warrant" and not r["residual"]]
+          bad = [r["attack"] for r in ours if r["successes"]]
+          assert len(ours) == 14 and not bad, f"attacks succeeded against NLIP-Warrant: {bad}"
+          assert data["legit"]["NLIP-Warrant"]["refused"] == 0, "false refusals"
+          print(f"all {len(ours)} attack classes blocked, no false refusals")
+          PY
+
+  web:
+    name: Dashboard · lint, typecheck, test, build
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: web
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          package_json_file: web/package.json
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+          cache-dependency-path: web/pnpm-lock.yaml
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm format:check
+      - run: pnpm lint
+      - run: pnpm typecheck
+      - name: Verify the recorded snapshot's signatures and hash chains in TypeScript
+        run: pnpm test
+      - run: pnpm build
+
+  paper:
+    name: Paper builds
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: wtfjoke/setup-tectonic@v3
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+      - run: cd paper && tectonic -X compile main.tex
+      - uses: actions/upload-artifact@v4
+        with:
+          name: paper
+          path: paper/main.pdf
