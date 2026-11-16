@@ -143,16 +143,23 @@ from nlip_server.server import setup_server
 from nlip_warrant import Money, ToolCall, Verifier, WarrantGuard
 from nlip_warrant.server import GuardedApplication
 
-guard = WarrantGuard(my_key, "nlip://payments.example",
-                     Verifier(trusted_roots={alice_key_id}, revocations=store))
+guard = WarrantGuard(
+    my_key, "nlip://payments.example", Verifier(trusted_roots={alice_key_id}, revocations=store)
+)
 
-@guard.protect(lambda inv: ToolCall(
-    action="invoice.pay",
-    amount=Money(currency=inv["currency"], minor=inv["amount"]),
-    counterparty=inv["supplier"], purpose=inv["purpose"]))
+
+@guard.protect(
+    lambda inv: ToolCall(
+        action="invoice.pay",
+        amount=Money(currency=inv["currency"], minor=inv["amount"]),
+        counterparty=inv["supplier"],
+        purpose=inv["purpose"],
+    )
+)
 def pay_invoice(inv): ...
 
-app = setup_server(GuardedApplication(MyNlipApp(), guard))   # any reference nlip_server app
+
+app = setup_server(GuardedApplication(MyNlipApp(), guard))  # any reference nlip_server app
 ```
 
 To delegate onward, call `guard.delegate(msg, authority, to=next_key, audience=..., caveats=Caveats(...), ttl=600)`. A widening raises `Denied(attenuation_widened)` before anything leaves the agent.

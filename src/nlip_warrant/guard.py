@@ -3,8 +3,9 @@
 One :class:`WarrantGuard` per agent enforces delegated authority at three control points of the
 SafeOSE / ECMA-434 architecture, using only boundary-visible data:
 
-* **ingress** (Type-1 from a user client, Type-2 from another agent): verify the warrant chain and the sender's proof on every inbound NLIP
-  message, then bind the verified authority to the session;
+* **ingress** (Type-1 from a user client, Type-2 from another agent): verify the warrant chain
+  and the sender's proof on every inbound NLIP message, then bind the verified authority to the
+  session;
 * **egress** (Type-2): attach an *attenuated* child warrant plus a fresh proof to outbound
   delegations, so authority only ever shrinks as it crosses agents;
 * **tool boundary** (Type-3): check each structured tool call against the effective caveats,
