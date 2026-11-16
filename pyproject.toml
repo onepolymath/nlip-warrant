@@ -60,7 +60,7 @@ select = ["E", "F", "W", "I", "B", "UP", "N", "S", "SIM", "RUF", "PL", "PT", "TI
 ignore = ["PLR0913", "PLR2004", "PLR0911", "PLR0912", "ANN401"]
 
 [tool.ruff.lint.per-file-ignores]
-"tests/**" = ["S101", "PLR2004", "ANN", "S105", "S106"]
+"tests/**" = ["S101", "PLR2004", "ANN", "S105", "S106", "PLC0415", "C408"]
 "eval/**" = ["S311", "T201", "PLR0915"]
 
 [tool.mypy]
@@ -78,6 +78,7 @@ follow_untyped_imports = false
 testpaths = ["tests"]
 addopts = "-q --strict-markers"
 asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
 
 [tool.coverage.run]
 branch = true
@@ -88,3 +89,12 @@ fail_under = 95
 show_missing = true
 skip_covered = true
 exclude_also = ["if TYPE_CHECKING:", "raise NotImplementedError", "@overload", "\\.\\.\\."]
+
+[[tool.mypy.overrides]]
+# Tests are type-checked (check_untyped_defs) but fixtures and parametrized cases need no
+# annotations of their own.
+module = ["tests.*"]
+disallow_untyped_defs = false
+disallow_incomplete_defs = false
+disallow_untyped_calls = false
+check_untyped_defs = true
