@@ -1,10 +1,12 @@
-.PHONY: install lint typecheck test cov demo eval bench report reproduce paper web clean
+.PHONY: install install-web lint typecheck test cov demo eval bench report reproduce paper web clean
 
 TRIALS ?= 500
 ITERATIONS ?= 2000
 
-install:            ## install Python deps (uv) and web deps (pnpm)
+install:            ## install Python deps with uv (Python 3.11+)
 	uv sync
+
+install-web:        ## install dashboard deps with pnpm
 	cd web && pnpm install --frozen-lockfile
 
 lint:
@@ -38,7 +40,7 @@ paper:              ## compile paper/main.tex with tectonic (or latexmk if insta
 	cd paper && (command -v tectonic >/dev/null && tectonic -X compile main.tex || latexmk -pdf main.tex)
 	cp paper/main.pdf paper/nlip-warrant.pdf
 
-web:
+web: install-web
 	cd web && pnpm build
 
 clean:
