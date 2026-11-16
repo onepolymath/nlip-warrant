@@ -61,7 +61,7 @@ ignore = ["PLR0913", "PLR2004", "PLR0911", "PLR0912", "ANN401"]
 
 [tool.ruff.lint.per-file-ignores]
 "tests/**" = ["S101", "PLR2004", "ANN", "S105", "S106", "PLC0415", "C408"]
-"eval/**" = ["S311", "T201", "PLR0915"]
+"eval/**" = ["S311", "T201", "PLR0915", "S101", "PT018", "B023"]
 
 [tool.mypy]
 strict = true

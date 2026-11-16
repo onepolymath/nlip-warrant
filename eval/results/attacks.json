@@ -1,0 +1,1614 @@
+{
+ "meta": {
+  "trials": 500,
+  "seed": 2026,
+  "elapsed_s": 62.7
+ },
+ "rows": [
+  {
+   "defense": "No authorization",
+   "family": "baseline",
+   "attack": "A1",
+   "title": "Action escalation (prompt injection)",
+   "group": "tool",
+   "residual": false,
+   "trials": 500,
+   "successes": 500,
+   "success_rate": 1.0,
+   "ci95": [
+    0.9923753814690964,
+    0.9999999999999999
+   ]
+  },
+  {
+   "defense": "No authorization",
+   "family": "baseline",
+   "attack": "A2",
+   "title": "Amount escalation",
+   "group": "tool",
+   "residual": false,
+   "trials": 500,
+   "successes": 500,
+   "success_rate": 1.0,
+   "ci95": [
+    0.9923753814690964,
+    0.9999999999999999
+   ]
+  },
+  {
+   "defense": "No authorization",
+   "family": "baseline",
+   "attack": "A3",
+   "title": "Counterparty substitution",
+   "group": "tool",
+   "residual": false,
+   "trials": 500,
+   "successes": 500,
+   "success_rate": 1.0,
+   "ci95": [
+    0.9923753814690964,
+    0.9999999999999999
+   ]
+  },
+  {
+   "defense": "No authorization",
+   "family": "baseline",
+   "attack": "A4",
+   "title": "Purpose misuse (confused deputy)",
+   "group": "tool",
+   "residual": false,
+   "trials": 500,
+   "successes": 500,
+   "success_rate": 1.0,
+   "ci95": [
+    0.9923753814690964,
+    0.9999999999999999
+   ]
+  },
+  {
+   "defense": "No authorization",
+   "family": "baseline",
+   "attack": "A5",
+   "title": "Budget exhaustion",
+   "group": "tool",
+   "residual": false,
+   "trials": 500,
+   "successes": 500,
+   "success_rate": 1.0,
+   "ci95": [
+    0.9923753814690964,
+    0.9999999999999999
+   ]
+  },
+  {
+   "defense": "No authorization",
+   "family": "baseline",
+   "attack": "A6",
+   "title": "Replay",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 500,
+   "success_rate": 1.0,
+   "ci95": [
+    0.9923753814690964,
+    0.9999999999999999
+   ]
+  },
+  {
+   "defense": "No authorization",
+   "family": "baseline",
+   "attack": "A7",
+   "title": "Stolen credential",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 500,
+   "success_rate": 1.0,
+   "ci95": [
+    0.9923753814690964,
+    0.9999999999999999
+   ]
+  },
+  {
+   "defense": "No authorization",
+   "family": "baseline",
+   "attack": "A8",
+   "title": "Credential tampering",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 500,
+   "success_rate": 1.0,
+   "ci95": [
+    0.9923753814690964,
+    0.9999999999999999
+   ]
+  },
+  {
+   "defense": "No authorization",
+   "family": "baseline",
+   "attack": "A9",
+   "title": "Over-delegation by intermediary",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 500,
+   "success_rate": 1.0,
+   "ci95": [
+    0.9923753814690964,
+    0.9999999999999999
+   ]
+  },
+  {
+   "defense": "No authorization",
+   "family": "baseline",
+   "attack": "A10",
+   "title": "Outsider forgery",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 500,
+   "success_rate": 1.0,
+   "ci95": [
+    0.9923753814690964,
+    0.9999999999999999
+   ]
+  },
+  {
+   "defense": "No authorization",
+   "family": "baseline",
+   "attack": "A11",
+   "title": "Use after revocation",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 500,
+   "success_rate": 1.0,
+   "ci95": [
+    0.9923753814690964,
+    0.9999999999999999
+   ]
+  },
+  {
+   "defense": "No authorization",
+   "family": "baseline",
+   "attack": "A12",
+   "title": "Use after expiry",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 500,
+   "success_rate": 1.0,
+   "ci95": [
+    0.9923753814690964,
+    0.9999999999999999
+   ]
+  },
+  {
+   "defense": "No authorization",
+   "family": "baseline",
+   "attack": "A13",
+   "title": "Audience redirection",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 500,
+   "success_rate": 1.0,
+   "ci95": [
+    0.9923753814690964,
+    0.9999999999999999
+   ]
+  },
+  {
+   "defense": "No authorization",
+   "family": "baseline",
+   "attack": "A14",
+   "title": "Forged revocation (DoS)",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 0,
+   "success_rate": 0.0,
+   "ci95": [
+    0.0,
+    0.007624618530903363
+   ]
+  },
+  {
+   "defense": "No authorization",
+   "family": "baseline",
+   "attack": "R1",
+   "title": "In-bound misuse (residual)",
+   "group": "\u2014",
+   "residual": true,
+   "trials": 500,
+   "successes": 500,
+   "success_rate": 1.0,
+   "ci95": [
+    0.9923753814690964,
+    0.9999999999999999
+   ]
+  },
+  {
+   "defense": "Static API keys",
+   "family": "baseline",
+   "attack": "A1",
+   "title": "Action escalation (prompt injection)",
+   "group": "tool",
+   "residual": false,
+   "trials": 500,
+   "successes": 500,
+   "success_rate": 1.0,
+   "ci95": [
+    0.9923753814690964,
+    0.9999999999999999
+   ]
+  },
+  {
+   "defense": "Static API keys",
+   "family": "baseline",
+   "attack": "A2",
+   "title": "Amount escalation",
+   "group": "tool",
+   "residual": false,
+   "trials": 500,
+   "successes": 500,
+   "success_rate": 1.0,
+   "ci95": [
+    0.9923753814690964,
+    0.9999999999999999
+   ]
+  },
+  {
+   "defense": "Static API keys",
+   "family": "baseline",
+   "attack": "A3",
+   "title": "Counterparty substitution",
+   "group": "tool",
+   "residual": false,
+   "trials": 500,
+   "successes": 500,
+   "success_rate": 1.0,
+   "ci95": [
+    0.9923753814690964,
+    0.9999999999999999
+   ]
+  },
+  {
+   "defense": "Static API keys",
+   "family": "baseline",
+   "attack": "A4",
+   "title": "Purpose misuse (confused deputy)",
+   "group": "tool",
+   "residual": false,
+   "trials": 500,
+   "successes": 500,
+   "success_rate": 1.0,
+   "ci95": [
+    0.9923753814690964,
+    0.9999999999999999
+   ]
+  },
+  {
+   "defense": "Static API keys",
+   "family": "baseline",
+   "attack": "A5",
+   "title": "Budget exhaustion",
+   "group": "tool",
+   "residual": false,
+   "trials": 500,
+   "successes": 500,
+   "success_rate": 1.0,
+   "ci95": [
+    0.9923753814690964,
+    0.9999999999999999
+   ]
+  },
+  {
+   "defense": "Static API keys",
+   "family": "baseline",
+   "attack": "A6",
+   "title": "Replay",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 500,
+   "success_rate": 1.0,
+   "ci95": [
+    0.9923753814690964,
+    0.9999999999999999
+   ]
+  },
+  {
+   "defense": "Static API keys",
+   "family": "baseline",
+   "attack": "A7",
+   "title": "Stolen credential",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 500,
+   "success_rate": 1.0,
+   "ci95": [
+    0.9923753814690964,
+    0.9999999999999999
+   ]
+  },
+  {
+   "defense": "Static API keys",
+   "family": "baseline",
+   "attack": "A8",
+   "title": "Credential tampering",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 500,
+   "success_rate": 1.0,
+   "ci95": [
+    0.9923753814690964,
+    0.9999999999999999
+   ]
+  },
+  {
+   "defense": "Static API keys",
+   "family": "baseline",
+   "attack": "A9",
+   "title": "Over-delegation by intermediary",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 500,
+   "success_rate": 1.0,
+   "ci95": [
+    0.9923753814690964,
+    0.9999999999999999
+   ]
+  },
+  {
+   "defense": "Static API keys",
+   "family": "baseline",
+   "attack": "A10",
+   "title": "Outsider forgery",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 0,
+   "success_rate": 0.0,
+   "ci95": [
+    0.0,
+    0.007624618530903363
+   ]
+  },
+  {
+   "defense": "Static API keys",
+   "family": "baseline",
+   "attack": "A11",
+   "title": "Use after revocation",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 500,
+   "success_rate": 1.0,
+   "ci95": [
+    0.9923753814690964,
+    0.9999999999999999
+   ]
+  },
+  {
+   "defense": "Static API keys",
+   "family": "baseline",
+   "attack": "A12",
+   "title": "Use after expiry",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 500,
+   "success_rate": 1.0,
+   "ci95": [
+    0.9923753814690964,
+    0.9999999999999999
+   ]
+  },
+  {
+   "defense": "Static API keys",
+   "family": "baseline",
+   "attack": "A13",
+   "title": "Audience redirection",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 0,
+   "success_rate": 0.0,
+   "ci95": [
+    0.0,
+    0.007624618530903363
+   ]
+  },
+  {
+   "defense": "Static API keys",
+   "family": "baseline",
+   "attack": "A14",
+   "title": "Forged revocation (DoS)",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 0,
+   "success_rate": 0.0,
+   "ci95": [
+    0.0,
+    0.007624618530903363
+   ]
+  },
+  {
+   "defense": "Static API keys",
+   "family": "baseline",
+   "attack": "R1",
+   "title": "In-bound misuse (residual)",
+   "group": "\u2014",
+   "residual": true,
+   "trials": 500,
+   "successes": 500,
+   "success_rate": 1.0,
+   "ci95": [
+    0.9923753814690964,
+    0.9999999999999999
+   ]
+  },
+  {
+   "defense": "OAuth bearer (forwarded)",
+   "family": "baseline",
+   "attack": "A1",
+   "title": "Action escalation (prompt injection)",
+   "group": "tool",
+   "residual": false,
+   "trials": 500,
+   "successes": 212,
+   "success_rate": 0.424,
+   "ci95": [
+    0.38142335182762455,
+    0.46773559018907274
+   ]
+  },
+  {
+   "defense": "OAuth bearer (forwarded)",
+   "family": "baseline",
+   "attack": "A2",
+   "title": "Amount escalation",
+   "group": "tool",
+   "residual": false,
+   "trials": 500,
+   "successes": 500,
+   "success_rate": 1.0,
+   "ci95": [
+    0.9923753814690964,
+    0.9999999999999999
+   ]
+  },
+  {
+   "defense": "OAuth bearer (forwarded)",
+   "family": "baseline",
+   "attack": "A3",
+   "title": "Counterparty substitution",
+   "group": "tool",
+   "residual": false,
+   "trials": 500,
+   "successes": 500,
+   "success_rate": 1.0,
+   "ci95": [
+    0.9923753814690964,
+    0.9999999999999999
+   ]
+  },
+  {
+   "defense": "OAuth bearer (forwarded)",
+   "family": "baseline",
+   "attack": "A4",
+   "title": "Purpose misuse (confused deputy)",
+   "group": "tool",
+   "residual": false,
+   "trials": 500,
+   "successes": 500,
+   "success_rate": 1.0,
+   "ci95": [
+    0.9923753814690964,
+    0.9999999999999999
+   ]
+  },
+  {
+   "defense": "OAuth bearer (forwarded)",
+   "family": "baseline",
+   "attack": "A5",
+   "title": "Budget exhaustion",
+   "group": "tool",
+   "residual": false,
+   "trials": 500,
+   "successes": 500,
+   "success_rate": 1.0,
+   "ci95": [
+    0.9923753814690964,
+    0.9999999999999999
+   ]
+  },
+  {
+   "defense": "OAuth bearer (forwarded)",
+   "family": "baseline",
+   "attack": "A6",
+   "title": "Replay",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 500,
+   "success_rate": 1.0,
+   "ci95": [
+    0.9923753814690964,
+    0.9999999999999999
+   ]
+  },
+  {
+   "defense": "OAuth bearer (forwarded)",
+   "family": "baseline",
+   "attack": "A7",
+   "title": "Stolen credential",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 500,
+   "success_rate": 1.0,
+   "ci95": [
+    0.9923753814690964,
+    0.9999999999999999
+   ]
+  },
+  {
+   "defense": "OAuth bearer (forwarded)",
+   "family": "baseline",
+   "attack": "A8",
+   "title": "Credential tampering",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 0,
+   "success_rate": 0.0,
+   "ci95": [
+    0.0,
+    0.007624618530903363
+   ]
+  },
+  {
+   "defense": "OAuth bearer (forwarded)",
+   "family": "baseline",
+   "attack": "A9",
+   "title": "Over-delegation by intermediary",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 328,
+   "success_rate": 0.656,
+   "ci95": [
+    0.6133133706304251,
+    0.6963077483879331
+   ]
+  },
+  {
+   "defense": "OAuth bearer (forwarded)",
+   "family": "baseline",
+   "attack": "A10",
+   "title": "Outsider forgery",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 0,
+   "success_rate": 0.0,
+   "ci95": [
+    0.0,
+    0.007624618530903363
+   ]
+  },
+  {
+   "defense": "OAuth bearer (forwarded)",
+   "family": "baseline",
+   "attack": "A11",
+   "title": "Use after revocation",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 0,
+   "success_rate": 0.0,
+   "ci95": [
+    0.0,
+    0.007624618530903363
+   ]
+  },
+  {
+   "defense": "OAuth bearer (forwarded)",
+   "family": "baseline",
+   "attack": "A12",
+   "title": "Use after expiry",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 0,
+   "success_rate": 0.0,
+   "ci95": [
+    0.0,
+    0.007624618530903363
+   ]
+  },
+  {
+   "defense": "OAuth bearer (forwarded)",
+   "family": "baseline",
+   "attack": "A13",
+   "title": "Audience redirection",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 500,
+   "success_rate": 1.0,
+   "ci95": [
+    0.9923753814690964,
+    0.9999999999999999
+   ]
+  },
+  {
+   "defense": "OAuth bearer (forwarded)",
+   "family": "baseline",
+   "attack": "A14",
+   "title": "Forged revocation (DoS)",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 0,
+   "success_rate": 0.0,
+   "ci95": [
+    0.0,
+    0.007624618530903363
+   ]
+  },
+  {
+   "defense": "OAuth bearer (forwarded)",
+   "family": "baseline",
+   "attack": "R1",
+   "title": "In-bound misuse (residual)",
+   "group": "\u2014",
+   "residual": true,
+   "trials": 500,
+   "successes": 500,
+   "success_rate": 1.0,
+   "ci95": [
+    0.9923753814690964,
+    0.9999999999999999
+   ]
+  },
+  {
+   "defense": "OAuth + token exchange",
+   "family": "baseline",
+   "attack": "A1",
+   "title": "Action escalation (prompt injection)",
+   "group": "tool",
+   "residual": false,
+   "trials": 500,
+   "successes": 0,
+   "success_rate": 0.0,
+   "ci95": [
+    0.0,
+    0.007624618530903363
+   ]
+  },
+  {
+   "defense": "OAuth + token exchange",
+   "family": "baseline",
+   "attack": "A2",
+   "title": "Amount escalation",
+   "group": "tool",
+   "residual": false,
+   "trials": 500,
+   "successes": 500,
+   "success_rate": 1.0,
+   "ci95": [
+    0.9923753814690964,
+    0.9999999999999999
+   ]
+  },
+  {
+   "defense": "OAuth + token exchange",
+   "family": "baseline",
+   "attack": "A3",
+   "title": "Counterparty substitution",
+   "group": "tool",
+   "residual": false,
+   "trials": 500,
+   "successes": 500,
+   "success_rate": 1.0,
+   "ci95": [
+    0.9923753814690964,
+    0.9999999999999999
+   ]
+  },
+  {
+   "defense": "OAuth + token exchange",
+   "family": "baseline",
+   "attack": "A4",
+   "title": "Purpose misuse (confused deputy)",
+   "group": "tool",
+   "residual": false,
+   "trials": 500,
+   "successes": 500,
+   "success_rate": 1.0,
+   "ci95": [
+    0.9923753814690964,
+    0.9999999999999999
+   ]
+  },
+  {
+   "defense": "OAuth + token exchange",
+   "family": "baseline",
+   "attack": "A5",
+   "title": "Budget exhaustion",
+   "group": "tool",
+   "residual": false,
+   "trials": 500,
+   "successes": 500,
+   "success_rate": 1.0,
+   "ci95": [
+    0.9923753814690964,
+    0.9999999999999999
+   ]
+  },
+  {
+   "defense": "OAuth + token exchange",
+   "family": "baseline",
+   "attack": "A6",
+   "title": "Replay",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 500,
+   "success_rate": 1.0,
+   "ci95": [
+    0.9923753814690964,
+    0.9999999999999999
+   ]
+  },
+  {
+   "defense": "OAuth + token exchange",
+   "family": "baseline",
+   "attack": "A7",
+   "title": "Stolen credential",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 500,
+   "success_rate": 1.0,
+   "ci95": [
+    0.9923753814690964,
+    0.9999999999999999
+   ]
+  },
+  {
+   "defense": "OAuth + token exchange",
+   "family": "baseline",
+   "attack": "A8",
+   "title": "Credential tampering",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 0,
+   "success_rate": 0.0,
+   "ci95": [
+    0.0,
+    0.007624618530903363
+   ]
+  },
+  {
+   "defense": "OAuth + token exchange",
+   "family": "baseline",
+   "attack": "A9",
+   "title": "Over-delegation by intermediary",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 244,
+   "success_rate": 0.488,
+   "ci95": [
+    0.4444444444444444,
+    0.5317385464002973
+   ]
+  },
+  {
+   "defense": "OAuth + token exchange",
+   "family": "baseline",
+   "attack": "A10",
+   "title": "Outsider forgery",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 0,
+   "success_rate": 0.0,
+   "ci95": [
+    0.0,
+    0.007624618530903363
+   ]
+  },
+  {
+   "defense": "OAuth + token exchange",
+   "family": "baseline",
+   "attack": "A11",
+   "title": "Use after revocation",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 500,
+   "success_rate": 1.0,
+   "ci95": [
+    0.9923753814690964,
+    0.9999999999999999
+   ]
+  },
+  {
+   "defense": "OAuth + token exchange",
+   "family": "baseline",
+   "attack": "A12",
+   "title": "Use after expiry",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 0,
+   "success_rate": 0.0,
+   "ci95": [
+    0.0,
+    0.007624618530903363
+   ]
+  },
+  {
+   "defense": "OAuth + token exchange",
+   "family": "baseline",
+   "attack": "A13",
+   "title": "Audience redirection",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 0,
+   "success_rate": 0.0,
+   "ci95": [
+    0.0,
+    0.007624618530903363
+   ]
+  },
+  {
+   "defense": "OAuth + token exchange",
+   "family": "baseline",
+   "attack": "A14",
+   "title": "Forged revocation (DoS)",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 0,
+   "success_rate": 0.0,
+   "ci95": [
+    0.0,
+    0.007624618530903363
+   ]
+  },
+  {
+   "defense": "OAuth + token exchange",
+   "family": "baseline",
+   "attack": "R1",
+   "title": "In-bound misuse (residual)",
+   "group": "\u2014",
+   "residual": true,
+   "trials": 500,
+   "successes": 500,
+   "success_rate": 1.0,
+   "ci95": [
+    0.9923753814690964,
+    0.9999999999999999
+   ]
+  },
+  {
+   "defense": "Warrant, no PoP",
+   "family": "ablation",
+   "attack": "A1",
+   "title": "Action escalation (prompt injection)",
+   "group": "tool",
+   "residual": false,
+   "trials": 500,
+   "successes": 0,
+   "success_rate": 0.0,
+   "ci95": [
+    0.0,
+    0.007624618530903363
+   ]
+  },
+  {
+   "defense": "Warrant, no PoP",
+   "family": "ablation",
+   "attack": "A2",
+   "title": "Amount escalation",
+   "group": "tool",
+   "residual": false,
+   "trials": 500,
+   "successes": 0,
+   "success_rate": 0.0,
+   "ci95": [
+    0.0,
+    0.007624618530903363
+   ]
+  },
+  {
+   "defense": "Warrant, no PoP",
+   "family": "ablation",
+   "attack": "A3",
+   "title": "Counterparty substitution",
+   "group": "tool",
+   "residual": false,
+   "trials": 500,
+   "successes": 0,
+   "success_rate": 0.0,
+   "ci95": [
+    0.0,
+    0.007624618530903363
+   ]
+  },
+  {
+   "defense": "Warrant, no PoP",
+   "family": "ablation",
+   "attack": "A4",
+   "title": "Purpose misuse (confused deputy)",
+   "group": "tool",
+   "residual": false,
+   "trials": 500,
+   "successes": 0,
+   "success_rate": 0.0,
+   "ci95": [
+    0.0,
+    0.007624618530903363
+   ]
+  },
+  {
+   "defense": "Warrant, no PoP",
+   "family": "ablation",
+   "attack": "A5",
+   "title": "Budget exhaustion",
+   "group": "tool",
+   "residual": false,
+   "trials": 500,
+   "successes": 0,
+   "success_rate": 0.0,
+   "ci95": [
+    0.0,
+    0.007624618530903363
+   ]
+  },
+  {
+   "defense": "Warrant, no PoP",
+   "family": "ablation",
+   "attack": "A6",
+   "title": "Replay",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 500,
+   "success_rate": 1.0,
+   "ci95": [
+    0.9923753814690964,
+    0.9999999999999999
+   ]
+  },
+  {
+   "defense": "Warrant, no PoP",
+   "family": "ablation",
+   "attack": "A7",
+   "title": "Stolen credential",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 500,
+   "success_rate": 1.0,
+   "ci95": [
+    0.9923753814690964,
+    0.9999999999999999
+   ]
+  },
+  {
+   "defense": "Warrant, no PoP",
+   "family": "ablation",
+   "attack": "A8",
+   "title": "Credential tampering",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 0,
+   "success_rate": 0.0,
+   "ci95": [
+    0.0,
+    0.007624618530903363
+   ]
+  },
+  {
+   "defense": "Warrant, no PoP",
+   "family": "ablation",
+   "attack": "A9",
+   "title": "Over-delegation by intermediary",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 0,
+   "success_rate": 0.0,
+   "ci95": [
+    0.0,
+    0.007624618530903363
+   ]
+  },
+  {
+   "defense": "Warrant, no PoP",
+   "family": "ablation",
+   "attack": "A10",
+   "title": "Outsider forgery",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 0,
+   "success_rate": 0.0,
+   "ci95": [
+    0.0,
+    0.007624618530903363
+   ]
+  },
+  {
+   "defense": "Warrant, no PoP",
+   "family": "ablation",
+   "attack": "A11",
+   "title": "Use after revocation",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 0,
+   "success_rate": 0.0,
+   "ci95": [
+    0.0,
+    0.007624618530903363
+   ]
+  },
+  {
+   "defense": "Warrant, no PoP",
+   "family": "ablation",
+   "attack": "A12",
+   "title": "Use after expiry",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 0,
+   "success_rate": 0.0,
+   "ci95": [
+    0.0,
+    0.007624618530903363
+   ]
+  },
+  {
+   "defense": "Warrant, no PoP",
+   "family": "ablation",
+   "attack": "A13",
+   "title": "Audience redirection",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 0,
+   "success_rate": 0.0,
+   "ci95": [
+    0.0,
+    0.007624618530903363
+   ]
+  },
+  {
+   "defense": "Warrant, no PoP",
+   "family": "ablation",
+   "attack": "A14",
+   "title": "Forged revocation (DoS)",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 0,
+   "success_rate": 0.0,
+   "ci95": [
+    0.0,
+    0.007624618530903363
+   ]
+  },
+  {
+   "defense": "Warrant, no PoP",
+   "family": "ablation",
+   "attack": "R1",
+   "title": "In-bound misuse (residual)",
+   "group": "\u2014",
+   "residual": true,
+   "trials": 500,
+   "successes": 500,
+   "success_rate": 1.0,
+   "ci95": [
+    0.9923753814690964,
+    0.9999999999999999
+   ]
+  },
+  {
+   "defense": "Warrant, ingress only",
+   "family": "ablation",
+   "attack": "A1",
+   "title": "Action escalation (prompt injection)",
+   "group": "tool",
+   "residual": false,
+   "trials": 500,
+   "successes": 500,
+   "success_rate": 1.0,
+   "ci95": [
+    0.9923753814690964,
+    0.9999999999999999
+   ]
+  },
+  {
+   "defense": "Warrant, ingress only",
+   "family": "ablation",
+   "attack": "A2",
+   "title": "Amount escalation",
+   "group": "tool",
+   "residual": false,
+   "trials": 500,
+   "successes": 500,
+   "success_rate": 1.0,
+   "ci95": [
+    0.9923753814690964,
+    0.9999999999999999
+   ]
+  },
+  {
+   "defense": "Warrant, ingress only",
+   "family": "ablation",
+   "attack": "A3",
+   "title": "Counterparty substitution",
+   "group": "tool",
+   "residual": false,
+   "trials": 500,
+   "successes": 500,
+   "success_rate": 1.0,
+   "ci95": [
+    0.9923753814690964,
+    0.9999999999999999
+   ]
+  },
+  {
+   "defense": "Warrant, ingress only",
+   "family": "ablation",
+   "attack": "A4",
+   "title": "Purpose misuse (confused deputy)",
+   "group": "tool",
+   "residual": false,
+   "trials": 500,
+   "successes": 500,
+   "success_rate": 1.0,
+   "ci95": [
+    0.9923753814690964,
+    0.9999999999999999
+   ]
+  },
+  {
+   "defense": "Warrant, ingress only",
+   "family": "ablation",
+   "attack": "A5",
+   "title": "Budget exhaustion",
+   "group": "tool",
+   "residual": false,
+   "trials": 500,
+   "successes": 500,
+   "success_rate": 1.0,
+   "ci95": [
+    0.9923753814690964,
+    0.9999999999999999
+   ]
+  },
+  {
+   "defense": "Warrant, ingress only",
+   "family": "ablation",
+   "attack": "A6",
+   "title": "Replay",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 0,
+   "success_rate": 0.0,
+   "ci95": [
+    0.0,
+    0.007624618530903363
+   ]
+  },
+  {
+   "defense": "Warrant, ingress only",
+   "family": "ablation",
+   "attack": "A7",
+   "title": "Stolen credential",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 0,
+   "success_rate": 0.0,
+   "ci95": [
+    0.0,
+    0.007624618530903363
+   ]
+  },
+  {
+   "defense": "Warrant, ingress only",
+   "family": "ablation",
+   "attack": "A8",
+   "title": "Credential tampering",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 0,
+   "success_rate": 0.0,
+   "ci95": [
+    0.0,
+    0.007624618530903363
+   ]
+  },
+  {
+   "defense": "Warrant, ingress only",
+   "family": "ablation",
+   "attack": "A9",
+   "title": "Over-delegation by intermediary",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 0,
+   "success_rate": 0.0,
+   "ci95": [
+    0.0,
+    0.007624618530903363
+   ]
+  },
+  {
+   "defense": "Warrant, ingress only",
+   "family": "ablation",
+   "attack": "A10",
+   "title": "Outsider forgery",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 0,
+   "success_rate": 0.0,
+   "ci95": [
+    0.0,
+    0.007624618530903363
+   ]
+  },
+  {
+   "defense": "Warrant, ingress only",
+   "family": "ablation",
+   "attack": "A11",
+   "title": "Use after revocation",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 0,
+   "success_rate": 0.0,
+   "ci95": [
+    0.0,
+    0.007624618530903363
+   ]
+  },
+  {
+   "defense": "Warrant, ingress only",
+   "family": "ablation",
+   "attack": "A12",
+   "title": "Use after expiry",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 0,
+   "success_rate": 0.0,
+   "ci95": [
+    0.0,
+    0.007624618530903363
+   ]
+  },
+  {
+   "defense": "Warrant, ingress only",
+   "family": "ablation",
+   "attack": "A13",
+   "title": "Audience redirection",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 0,
+   "success_rate": 0.0,
+   "ci95": [
+    0.0,
+    0.007624618530903363
+   ]
+  },
+  {
+   "defense": "Warrant, ingress only",
+   "family": "ablation",
+   "attack": "A14",
+   "title": "Forged revocation (DoS)",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 0,
+   "success_rate": 0.0,
+   "ci95": [
+    0.0,
+    0.007624618530903363
+   ]
+  },
+  {
+   "defense": "Warrant, ingress only",
+   "family": "ablation",
+   "attack": "R1",
+   "title": "In-bound misuse (residual)",
+   "group": "\u2014",
+   "residual": true,
+   "trials": 500,
+   "successes": 500,
+   "success_rate": 1.0,
+   "ci95": [
+    0.9923753814690964,
+    0.9999999999999999
+   ]
+  },
+  {
+   "defense": "NLIP-Warrant",
+   "family": "ours",
+   "attack": "A1",
+   "title": "Action escalation (prompt injection)",
+   "group": "tool",
+   "residual": false,
+   "trials": 500,
+   "successes": 0,
+   "success_rate": 0.0,
+   "ci95": [
+    0.0,
+    0.007624618530903363
+   ]
+  },
+  {
+   "defense": "NLIP-Warrant",
+   "family": "ours",
+   "attack": "A2",
+   "title": "Amount escalation",
+   "group": "tool",
+   "residual": false,
+   "trials": 500,
+   "successes": 0,
+   "success_rate": 0.0,
+   "ci95": [
+    0.0,
+    0.007624618530903363
+   ]
+  },
+  {
+   "defense": "NLIP-Warrant",
+   "family": "ours",
+   "attack": "A3",
+   "title": "Counterparty substitution",
+   "group": "tool",
+   "residual": false,
+   "trials": 500,
+   "successes": 0,
+   "success_rate": 0.0,
+   "ci95": [
+    0.0,
+    0.007624618530903363
+   ]
+  },
+  {
+   "defense": "NLIP-Warrant",
+   "family": "ours",
+   "attack": "A4",
+   "title": "Purpose misuse (confused deputy)",
+   "group": "tool",
+   "residual": false,
+   "trials": 500,
+   "successes": 0,
+   "success_rate": 0.0,
+   "ci95": [
+    0.0,
+    0.007624618530903363
+   ]
+  },
+  {
+   "defense": "NLIP-Warrant",
+   "family": "ours",
+   "attack": "A5",
+   "title": "Budget exhaustion",
+   "group": "tool",
+   "residual": false,
+   "trials": 500,
+   "successes": 0,
+   "success_rate": 0.0,
+   "ci95": [
+    0.0,
+    0.007624618530903363
+   ]
+  },
+  {
+   "defense": "NLIP-Warrant",
+   "family": "ours",
+   "attack": "A6",
+   "title": "Replay",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 0,
+   "success_rate": 0.0,
+   "ci95": [
+    0.0,
+    0.007624618530903363
+   ]
+  },
+  {
+   "defense": "NLIP-Warrant",
+   "family": "ours",
+   "attack": "A7",
+   "title": "Stolen credential",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 0,
+   "success_rate": 0.0,
+   "ci95": [
+    0.0,
+    0.007624618530903363
+   ]
+  },
+  {
+   "defense": "NLIP-Warrant",
+   "family": "ours",
+   "attack": "A8",
+   "title": "Credential tampering",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 0,
+   "success_rate": 0.0,
+   "ci95": [
+    0.0,
+    0.007624618530903363
+   ]
+  },
+  {
+   "defense": "NLIP-Warrant",
+   "family": "ours",
+   "attack": "A9",
+   "title": "Over-delegation by intermediary",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 0,
+   "success_rate": 0.0,
+   "ci95": [
+    0.0,
+    0.007624618530903363
+   ]
+  },
+  {
+   "defense": "NLIP-Warrant",
+   "family": "ours",
+   "attack": "A10",
+   "title": "Outsider forgery",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 0,
+   "success_rate": 0.0,
+   "ci95": [
+    0.0,
+    0.007624618530903363
+   ]
+  },
+  {
+   "defense": "NLIP-Warrant",
+   "family": "ours",
+   "attack": "A11",
+   "title": "Use after revocation",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 0,
+   "success_rate": 0.0,
+   "ci95": [
+    0.0,
+    0.007624618530903363
+   ]
+  },
+  {
+   "defense": "NLIP-Warrant",
+   "family": "ours",
+   "attack": "A12",
+   "title": "Use after expiry",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 0,
+   "success_rate": 0.0,
+   "ci95": [
+    0.0,
+    0.007624618530903363
+   ]
+  },
+  {
+   "defense": "NLIP-Warrant",
+   "family": "ours",
+   "attack": "A13",
+   "title": "Audience redirection",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 0,
+   "success_rate": 0.0,
+   "ci95": [
+    0.0,
+    0.007624618530903363
+   ]
+  },
+  {
+   "defense": "NLIP-Warrant",
+   "family": "ours",
+   "attack": "A14",
+   "title": "Forged revocation (DoS)",
+   "group": "ingress",
+   "residual": false,
+   "trials": 500,
+   "successes": 0,
+   "success_rate": 0.0,
+   "ci95": [
+    0.0,
+    0.007624618530903363
+   ]
+  },
+  {
+   "defense": "NLIP-Warrant",
+   "family": "ours",
+   "attack": "R1",
+   "title": "In-bound misuse (residual)",
+   "group": "\u2014",
+   "residual": true,
+   "trials": 500,
+   "successes": 500,
+   "success_rate": 1.0,
+   "ci95": [
+    0.9923753814690964,
+    0.9999999999999999
+   ]
+  }
+ ],
+ "legit": {
+  "No authorization": {
+   "requests": 2500,
+   "refused": 0
+  },
+  "Static API keys": {
+   "requests": 2500,
+   "refused": 0
+  },
+  "OAuth bearer (forwarded)": {
+   "requests": 2500,
+   "refused": 0
+  },
+  "OAuth + token exchange": {
+   "requests": 2500,
+   "refused": 0
+  },
+  "Warrant, no PoP": {
+   "requests": 2500,
+   "refused": 0
+  },
+  "Warrant, ingress only": {
+   "requests": 2500,
+   "refused": 0
+  },
+  "NLIP-Warrant": {
+   "requests": 2500,
+   "refused": 0
+  }
+ }
+}

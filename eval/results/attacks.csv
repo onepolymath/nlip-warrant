@@ -1,0 +1,106 @@
+defense,attack,title,trials,successes,success_rate,ci_lo,ci_hi
+No authorization,A1,Action escalation (prompt injection),500,500,1.0000,0.9924,1.0000
+No authorization,A2,Amount escalation,500,500,1.0000,0.9924,1.0000
+No authorization,A3,Counterparty substitution,500,500,1.0000,0.9924,1.0000
+No authorization,A4,Purpose misuse (confused deputy),500,500,1.0000,0.9924,1.0000
+No authorization,A5,Budget exhaustion,500,500,1.0000,0.9924,1.0000
+No authorization,A6,Replay,500,500,1.0000,0.9924,1.0000
+No authorization,A7,Stolen credential,500,500,1.0000,0.9924,1.0000
+No authorization,A8,Credential tampering,500,500,1.0000,0.9924,1.0000
+No authorization,A9,Over-delegation by intermediary,500,500,1.0000,0.9924,1.0000
+No authorization,A10,Outsider forgery,500,500,1.0000,0.9924,1.0000
+No authorization,A11,Use after revocation,500,500,1.0000,0.9924,1.0000
+No authorization,A12,Use after expiry,500,500,1.0000,0.9924,1.0000
+No authorization,A13,Audience redirection,500,500,1.0000,0.9924,1.0000
+No authorization,A14,Forged revocation (DoS),500,0,0.0000,0.0000,0.0076
+No authorization,R1,In-bound misuse (residual),500,500,1.0000,0.9924,1.0000
+Static API keys,A1,Action escalation (prompt injection),500,500,1.0000,0.9924,1.0000
+Static API keys,A2,Amount escalation,500,500,1.0000,0.9924,1.0000
+Static API keys,A3,Counterparty substitution,500,500,1.0000,0.9924,1.0000
+Static API keys,A4,Purpose misuse (confused deputy),500,500,1.0000,0.9924,1.0000
+Static API keys,A5,Budget exhaustion,500,500,1.0000,0.9924,1.0000
+Static API keys,A6,Replay,500,500,1.0000,0.9924,1.0000
+Static API keys,A7,Stolen credential,500,500,1.0000,0.9924,1.0000
+Static API keys,A8,Credential tampering,500,500,1.0000,0.9924,1.0000
+Static API keys,A9,Over-delegation by intermediary,500,500,1.0000,0.9924,1.0000
+Static API keys,A10,Outsider forgery,500,0,0.0000,0.0000,0.0076
+Static API keys,A11,Use after revocation,500,500,1.0000,0.9924,1.0000
+Static API keys,A12,Use after expiry,500,500,1.0000,0.9924,1.0000
+Static API keys,A13,Audience redirection,500,0,0.0000,0.0000,0.0076
+Static API keys,A14,Forged revocation (DoS),500,0,0.0000,0.0000,0.0076
+Static API keys,R1,In-bound misuse (residual),500,500,1.0000,0.9924,1.0000
+OAuth bearer (forwarded),A1,Action escalation (prompt injection),500,212,0.4240,0.3814,0.4677
+OAuth bearer (forwarded),A2,Amount escalation,500,500,1.0000,0.9924,1.0000
+OAuth bearer (forwarded),A3,Counterparty substitution,500,500,1.0000,0.9924,1.0000
+OAuth bearer (forwarded),A4,Purpose misuse (confused deputy),500,500,1.0000,0.9924,1.0000
+OAuth bearer (forwarded),A5,Budget exhaustion,500,500,1.0000,0.9924,1.0000
+OAuth bearer (forwarded),A6,Replay,500,500,1.0000,0.9924,1.0000
+OAuth bearer (forwarded),A7,Stolen credential,500,500,1.0000,0.9924,1.0000
+OAuth bearer (forwarded),A8,Credential tampering,500,0,0.0000,0.0000,0.0076
+OAuth bearer (forwarded),A9,Over-delegation by intermediary,500,328,0.6560,0.6133,0.6963
+OAuth bearer (forwarded),A10,Outsider forgery,500,0,0.0000,0.0000,0.0076
+OAuth bearer (forwarded),A11,Use after revocation,500,0,0.0000,0.0000,0.0076
+OAuth bearer (forwarded),A12,Use after expiry,500,0,0.0000,0.0000,0.0076
+OAuth bearer (forwarded),A13,Audience redirection,500,500,1.0000,0.9924,1.0000
+OAuth bearer (forwarded),A14,Forged revocation (DoS),500,0,0.0000,0.0000,0.0076
+OAuth bearer (forwarded),R1,In-bound misuse (residual),500,500,1.0000,0.9924,1.0000
+OAuth + token exchange,A1,Action escalation (prompt injection),500,0,0.0000,0.0000,0.0076
+OAuth + token exchange,A2,Amount escalation,500,500,1.0000,0.9924,1.0000
+OAuth + token exchange,A3,Counterparty substitution,500,500,1.0000,0.9924,1.0000
+OAuth + token exchange,A4,Purpose misuse (confused deputy),500,500,1.0000,0.9924,1.0000
+OAuth + token exchange,A5,Budget exhaustion,500,500,1.0000,0.9924,1.0000
+OAuth + token exchange,A6,Replay,500,500,1.0000,0.9924,1.0000
+OAuth + token exchange,A7,Stolen credential,500,500,1.0000,0.9924,1.0000
+OAuth + token exchange,A8,Credential tampering,500,0,0.0000,0.0000,0.0076
+OAuth + token exchange,A9,Over-delegation by intermediary,500,244,0.4880,0.4444,0.5317
+OAuth + token exchange,A10,Outsider forgery,500,0,0.0000,0.0000,0.0076
+OAuth + token exchange,A11,Use after revocation,500,500,1.0000,0.9924,1.0000
+OAuth + token exchange,A12,Use after expiry,500,0,0.0000,0.0000,0.0076
+OAuth + token exchange,A13,Audience redirection,500,0,0.0000,0.0000,0.0076
+OAuth + token exchange,A14,Forged revocation (DoS),500,0,0.0000,0.0000,0.0076
+OAuth + token exchange,R1,In-bound misuse (residual),500,500,1.0000,0.9924,1.0000
+"Warrant, no PoP",A1,Action escalation (prompt injection),500,0,0.0000,0.0000,0.0076
+"Warrant, no PoP",A2,Amount escalation,500,0,0.0000,0.0000,0.0076
+"Warrant, no PoP",A3,Counterparty substitution,500,0,0.0000,0.0000,0.0076
+"Warrant, no PoP",A4,Purpose misuse (confused deputy),500,0,0.0000,0.0000,0.0076
+"Warrant, no PoP",A5,Budget exhaustion,500,0,0.0000,0.0000,0.0076
+"Warrant, no PoP",A6,Replay,500,500,1.0000,0.9924,1.0000
+"Warrant, no PoP",A7,Stolen credential,500,500,1.0000,0.9924,1.0000
+"Warrant, no PoP",A8,Credential tampering,500,0,0.0000,0.0000,0.0076
+"Warrant, no PoP",A9,Over-delegation by intermediary,500,0,0.0000,0.0000,0.0076
+"Warrant, no PoP",A10,Outsider forgery,500,0,0.0000,0.0000,0.0076
+"Warrant, no PoP",A11,Use after revocation,500,0,0.0000,0.0000,0.0076
+"Warrant, no PoP",A12,Use after expiry,500,0,0.0000,0.0000,0.0076
+"Warrant, no PoP",A13,Audience redirection,500,0,0.0000,0.0000,0.0076
+"Warrant, no PoP",A14,Forged revocation (DoS),500,0,0.0000,0.0000,0.0076
+"Warrant, no PoP",R1,In-bound misuse (residual),500,500,1.0000,0.9924,1.0000
+"Warrant, ingress only",A1,Action escalation (prompt injection),500,500,1.0000,0.9924,1.0000
+"Warrant, ingress only",A2,Amount escalation,500,500,1.0000,0.9924,1.0000
+"Warrant, ingress only",A3,Counterparty substitution,500,500,1.0000,0.9924,1.0000
+"Warrant, ingress only",A4,Purpose misuse (confused deputy),500,500,1.0000,0.9924,1.0000
+"Warrant, ingress only",A5,Budget exhaustion,500,500,1.0000,0.9924,1.0000
+"Warrant, ingress only",A6,Replay,500,0,0.0000,0.0000,0.0076
+"Warrant, ingress only",A7,Stolen credential,500,0,0.0000,0.0000,0.0076
+"Warrant, ingress only",A8,Credential tampering,500,0,0.0000,0.0000,0.0076
+"Warrant, ingress only",A9,Over-delegation by intermediary,500,0,0.0000,0.0000,0.0076
+"Warrant, ingress only",A10,Outsider forgery,500,0,0.0000,0.0000,0.0076
+"Warrant, ingress only",A11,Use after revocation,500,0,0.0000,0.0000,0.0076
+"Warrant, ingress only",A12,Use after expiry,500,0,0.0000,0.0000,0.0076
+"Warrant, ingress only",A13,Audience redirection,500,0,0.0000,0.0000,0.0076
+"Warrant, ingress only",A14,Forged revocation (DoS),500,0,0.0000,0.0000,0.0076
+"Warrant, ingress only",R1,In-bound misuse (residual),500,500,1.0000,0.9924,1.0000
+NLIP-Warrant,A1,Action escalation (prompt injection),500,0,0.0000,0.0000,0.0076
+NLIP-Warrant,A2,Amount escalation,500,0,0.0000,0.0000,0.0076
+NLIP-Warrant,A3,Counterparty substitution,500,0,0.0000,0.0000,0.0076
+NLIP-Warrant,A4,Purpose misuse (confused deputy),500,0,0.0000,0.0000,0.0076
+NLIP-Warrant,A5,Budget exhaustion,500,0,0.0000,0.0000,0.0076
+NLIP-Warrant,A6,Replay,500,0,0.0000,0.0000,0.0076
+NLIP-Warrant,A7,Stolen credential,500,0,0.0000,0.0000,0.0076
+NLIP-Warrant,A8,Credential tampering,500,0,0.0000,0.0000,0.0076
+NLIP-Warrant,A9,Over-delegation by intermediary,500,0,0.0000,0.0000,0.0076
+NLIP-Warrant,A10,Outsider forgery,500,0,0.0000,0.0000,0.0076
+NLIP-Warrant,A11,Use after revocation,500,0,0.0000,0.0000,0.0076
+NLIP-Warrant,A12,Use after expiry,500,0,0.0000,0.0000,0.0076
+NLIP-Warrant,A13,Audience redirection,500,0,0.0000,0.0000,0.0076
+NLIP-Warrant,A14,Forged revocation (DoS),500,0,0.0000,0.0000,0.0076
+NLIP-Warrant,R1,In-bound misuse (residual),500,500,1.0000,0.9924,1.0000

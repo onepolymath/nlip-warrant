@@ -1,0 +1,864 @@
+{
+ "meta": {
+  "trials": 500,
+  "seed": 2026,
+  "elapsed_s": 62.7
+ },
+ "defenses": {
+  "No authorization": {
+   "short": "None",
+   "family": "baseline",
+   "classes_fully_blocked": 1,
+   "classes": 14,
+   "mean_attack_success": 0.9286,
+   "false_refusals": 0,
+   "legit_requests": 2500
+  },
+  "Static API keys": {
+   "short": "API key",
+   "family": "baseline",
+   "classes_fully_blocked": 3,
+   "classes": 14,
+   "mean_attack_success": 0.7857,
+   "false_refusals": 0,
+   "legit_requests": 2500
+  },
+  "OAuth bearer (forwarded)": {
+   "short": "OAuth",
+   "family": "baseline",
+   "classes_fully_blocked": 5,
+   "classes": 14,
+   "mean_attack_success": 0.5771,
+   "false_refusals": 0,
+   "legit_requests": 2500
+  },
+  "OAuth + token exchange": {
+   "short": "OAuth+TE",
+   "family": "baseline",
+   "classes_fully_blocked": 6,
+   "classes": 14,
+   "mean_attack_success": 0.5349,
+   "false_refusals": 0,
+   "legit_requests": 2500
+  },
+  "Warrant, no PoP": {
+   "short": "W/o PoP",
+   "family": "ablation",
+   "classes_fully_blocked": 12,
+   "classes": 14,
+   "mean_attack_success": 0.1429,
+   "false_refusals": 0,
+   "legit_requests": 2500
+  },
+  "Warrant, ingress only": {
+   "short": "W/o T3",
+   "family": "ablation",
+   "classes_fully_blocked": 9,
+   "classes": 14,
+   "mean_attack_success": 0.3571,
+   "false_refusals": 0,
+   "legit_requests": 2500
+  },
+  "NLIP-Warrant": {
+   "short": "Ours",
+   "family": "ours",
+   "classes_fully_blocked": 14,
+   "classes": 14,
+   "mean_attack_success": 0.0,
+   "false_refusals": 0,
+   "legit_requests": 2500
+  }
+ },
+ "attacks": [
+  {
+   "key": "A1",
+   "title": "Action escalation (prompt injection)",
+   "group": "tool",
+   "residual": false,
+   "success": {
+    "No authorization": 1.0,
+    "Static API keys": 1.0,
+    "OAuth bearer (forwarded)": 0.424,
+    "OAuth + token exchange": 0.0,
+    "Warrant, no PoP": 0.0,
+    "Warrant, ingress only": 1.0,
+    "NLIP-Warrant": 0.0
+   },
+   "ci95": {
+    "No authorization": [
+     0.9924,
+     1.0
+    ],
+    "Static API keys": [
+     0.9924,
+     1.0
+    ],
+    "OAuth bearer (forwarded)": [
+     0.3814,
+     0.4677
+    ],
+    "OAuth + token exchange": [
+     0.0,
+     0.0076
+    ],
+    "Warrant, no PoP": [
+     0.0,
+     0.0076
+    ],
+    "Warrant, ingress only": [
+     0.9924,
+     1.0
+    ],
+    "NLIP-Warrant": [
+     0.0,
+     0.0076
+    ]
+   }
+  },
+  {
+   "key": "A2",
+   "title": "Amount escalation",
+   "group": "tool",
+   "residual": false,
+   "success": {
+    "No authorization": 1.0,
+    "Static API keys": 1.0,
+    "OAuth bearer (forwarded)": 1.0,
+    "OAuth + token exchange": 1.0,
+    "Warrant, no PoP": 0.0,
+    "Warrant, ingress only": 1.0,
+    "NLIP-Warrant": 0.0
+   },
+   "ci95": {
+    "No authorization": [
+     0.9924,
+     1.0
+    ],
+    "Static API keys": [
+     0.9924,
+     1.0
+    ],
+    "OAuth bearer (forwarded)": [
+     0.9924,
+     1.0
+    ],
+    "OAuth + token exchange": [
+     0.9924,
+     1.0
+    ],
+    "Warrant, no PoP": [
+     0.0,
+     0.0076
+    ],
+    "Warrant, ingress only": [
+     0.9924,
+     1.0
+    ],
+    "NLIP-Warrant": [
+     0.0,
+     0.0076
+    ]
+   }
+  },
+  {
+   "key": "A3",
+   "title": "Counterparty substitution",
+   "group": "tool",
+   "residual": false,
+   "success": {
+    "No authorization": 1.0,
+    "Static API keys": 1.0,
+    "OAuth bearer (forwarded)": 1.0,
+    "OAuth + token exchange": 1.0,
+    "Warrant, no PoP": 0.0,
+    "Warrant, ingress only": 1.0,
+    "NLIP-Warrant": 0.0
+   },
+   "ci95": {
+    "No authorization": [
+     0.9924,
+     1.0
+    ],
+    "Static API keys": [
+     0.9924,
+     1.0
+    ],
+    "OAuth bearer (forwarded)": [
+     0.9924,
+     1.0
+    ],
+    "OAuth + token exchange": [
+     0.9924,
+     1.0
+    ],
+    "Warrant, no PoP": [
+     0.0,
+     0.0076
+    ],
+    "Warrant, ingress only": [
+     0.9924,
+     1.0
+    ],
+    "NLIP-Warrant": [
+     0.0,
+     0.0076
+    ]
+   }
+  },
+  {
+   "key": "A4",
+   "title": "Purpose misuse (confused deputy)",
+   "group": "tool",
+   "residual": false,
+   "success": {
+    "No authorization": 1.0,
+    "Static API keys": 1.0,
+    "OAuth bearer (forwarded)": 1.0,
+    "OAuth + token exchange": 1.0,
+    "Warrant, no PoP": 0.0,
+    "Warrant, ingress only": 1.0,
+    "NLIP-Warrant": 0.0
+   },
+   "ci95": {
+    "No authorization": [
+     0.9924,
+     1.0
+    ],
+    "Static API keys": [
+     0.9924,
+     1.0
+    ],
+    "OAuth bearer (forwarded)": [
+     0.9924,
+     1.0
+    ],
+    "OAuth + token exchange": [
+     0.9924,
+     1.0
+    ],
+    "Warrant, no PoP": [
+     0.0,
+     0.0076
+    ],
+    "Warrant, ingress only": [
+     0.9924,
+     1.0
+    ],
+    "NLIP-Warrant": [
+     0.0,
+     0.0076
+    ]
+   }
+  },
+  {
+   "key": "A5",
+   "title": "Budget exhaustion",
+   "group": "tool",
+   "residual": false,
+   "success": {
+    "No authorization": 1.0,
+    "Static API keys": 1.0,
+    "OAuth bearer (forwarded)": 1.0,
+    "OAuth + token exchange": 1.0,
+    "Warrant, no PoP": 0.0,
+    "Warrant, ingress only": 1.0,
+    "NLIP-Warrant": 0.0
+   },
+   "ci95": {
+    "No authorization": [
+     0.9924,
+     1.0
+    ],
+    "Static API keys": [
+     0.9924,
+     1.0
+    ],
+    "OAuth bearer (forwarded)": [
+     0.9924,
+     1.0
+    ],
+    "OAuth + token exchange": [
+     0.9924,
+     1.0
+    ],
+    "Warrant, no PoP": [
+     0.0,
+     0.0076
+    ],
+    "Warrant, ingress only": [
+     0.9924,
+     1.0
+    ],
+    "NLIP-Warrant": [
+     0.0,
+     0.0076
+    ]
+   }
+  },
+  {
+   "key": "A6",
+   "title": "Replay",
+   "group": "ingress",
+   "residual": false,
+   "success": {
+    "No authorization": 1.0,
+    "Static API keys": 1.0,
+    "OAuth bearer (forwarded)": 1.0,
+    "OAuth + token exchange": 1.0,
+    "Warrant, no PoP": 1.0,
+    "Warrant, ingress only": 0.0,
+    "NLIP-Warrant": 0.0
+   },
+   "ci95": {
+    "No authorization": [
+     0.9924,
+     1.0
+    ],
+    "Static API keys": [
+     0.9924,
+     1.0
+    ],
+    "OAuth bearer (forwarded)": [
+     0.9924,
+     1.0
+    ],
+    "OAuth + token exchange": [
+     0.9924,
+     1.0
+    ],
+    "Warrant, no PoP": [
+     0.9924,
+     1.0
+    ],
+    "Warrant, ingress only": [
+     0.0,
+     0.0076
+    ],
+    "NLIP-Warrant": [
+     0.0,
+     0.0076
+    ]
+   }
+  },
+  {
+   "key": "A7",
+   "title": "Stolen credential",
+   "group": "ingress",
+   "residual": false,
+   "success": {
+    "No authorization": 1.0,
+    "Static API keys": 1.0,
+    "OAuth bearer (forwarded)": 1.0,
+    "OAuth + token exchange": 1.0,
+    "Warrant, no PoP": 1.0,
+    "Warrant, ingress only": 0.0,
+    "NLIP-Warrant": 0.0
+   },
+   "ci95": {
+    "No authorization": [
+     0.9924,
+     1.0
+    ],
+    "Static API keys": [
+     0.9924,
+     1.0
+    ],
+    "OAuth bearer (forwarded)": [
+     0.9924,
+     1.0
+    ],
+    "OAuth + token exchange": [
+     0.9924,
+     1.0
+    ],
+    "Warrant, no PoP": [
+     0.9924,
+     1.0
+    ],
+    "Warrant, ingress only": [
+     0.0,
+     0.0076
+    ],
+    "NLIP-Warrant": [
+     0.0,
+     0.0076
+    ]
+   }
+  },
+  {
+   "key": "A8",
+   "title": "Credential tampering",
+   "group": "ingress",
+   "residual": false,
+   "success": {
+    "No authorization": 1.0,
+    "Static API keys": 1.0,
+    "OAuth bearer (forwarded)": 0.0,
+    "OAuth + token exchange": 0.0,
+    "Warrant, no PoP": 0.0,
+    "Warrant, ingress only": 0.0,
+    "NLIP-Warrant": 0.0
+   },
+   "ci95": {
+    "No authorization": [
+     0.9924,
+     1.0
+    ],
+    "Static API keys": [
+     0.9924,
+     1.0
+    ],
+    "OAuth bearer (forwarded)": [
+     0.0,
+     0.0076
+    ],
+    "OAuth + token exchange": [
+     0.0,
+     0.0076
+    ],
+    "Warrant, no PoP": [
+     0.0,
+     0.0076
+    ],
+    "Warrant, ingress only": [
+     0.0,
+     0.0076
+    ],
+    "NLIP-Warrant": [
+     0.0,
+     0.0076
+    ]
+   }
+  },
+  {
+   "key": "A9",
+   "title": "Over-delegation by intermediary",
+   "group": "ingress",
+   "residual": false,
+   "success": {
+    "No authorization": 1.0,
+    "Static API keys": 1.0,
+    "OAuth bearer (forwarded)": 0.656,
+    "OAuth + token exchange": 0.488,
+    "Warrant, no PoP": 0.0,
+    "Warrant, ingress only": 0.0,
+    "NLIP-Warrant": 0.0
+   },
+   "ci95": {
+    "No authorization": [
+     0.9924,
+     1.0
+    ],
+    "Static API keys": [
+     0.9924,
+     1.0
+    ],
+    "OAuth bearer (forwarded)": [
+     0.6133,
+     0.6963
+    ],
+    "OAuth + token exchange": [
+     0.4444,
+     0.5317
+    ],
+    "Warrant, no PoP": [
+     0.0,
+     0.0076
+    ],
+    "Warrant, ingress only": [
+     0.0,
+     0.0076
+    ],
+    "NLIP-Warrant": [
+     0.0,
+     0.0076
+    ]
+   }
+  },
+  {
+   "key": "A10",
+   "title": "Outsider forgery",
+   "group": "ingress",
+   "residual": false,
+   "success": {
+    "No authorization": 1.0,
+    "Static API keys": 0.0,
+    "OAuth bearer (forwarded)": 0.0,
+    "OAuth + token exchange": 0.0,
+    "Warrant, no PoP": 0.0,
+    "Warrant, ingress only": 0.0,
+    "NLIP-Warrant": 0.0
+   },
+   "ci95": {
+    "No authorization": [
+     0.9924,
+     1.0
+    ],
+    "Static API keys": [
+     0.0,
+     0.0076
+    ],
+    "OAuth bearer (forwarded)": [
+     0.0,
+     0.0076
+    ],
+    "OAuth + token exchange": [
+     0.0,
+     0.0076
+    ],
+    "Warrant, no PoP": [
+     0.0,
+     0.0076
+    ],
+    "Warrant, ingress only": [
+     0.0,
+     0.0076
+    ],
+    "NLIP-Warrant": [
+     0.0,
+     0.0076
+    ]
+   }
+  },
+  {
+   "key": "A11",
+   "title": "Use after revocation",
+   "group": "ingress",
+   "residual": false,
+   "success": {
+    "No authorization": 1.0,
+    "Static API keys": 1.0,
+    "OAuth bearer (forwarded)": 0.0,
+    "OAuth + token exchange": 1.0,
+    "Warrant, no PoP": 0.0,
+    "Warrant, ingress only": 0.0,
+    "NLIP-Warrant": 0.0
+   },
+   "ci95": {
+    "No authorization": [
+     0.9924,
+     1.0
+    ],
+    "Static API keys": [
+     0.9924,
+     1.0
+    ],
+    "OAuth bearer (forwarded)": [
+     0.0,
+     0.0076
+    ],
+    "OAuth + token exchange": [
+     0.9924,
+     1.0
+    ],
+    "Warrant, no PoP": [
+     0.0,
+     0.0076
+    ],
+    "Warrant, ingress only": [
+     0.0,
+     0.0076
+    ],
+    "NLIP-Warrant": [
+     0.0,
+     0.0076
+    ]
+   }
+  },
+  {
+   "key": "A12",
+   "title": "Use after expiry",
+   "group": "ingress",
+   "residual": false,
+   "success": {
+    "No authorization": 1.0,
+    "Static API keys": 1.0,
+    "OAuth bearer (forwarded)": 0.0,
+    "OAuth + token exchange": 0.0,
+    "Warrant, no PoP": 0.0,
+    "Warrant, ingress only": 0.0,
+    "NLIP-Warrant": 0.0
+   },
+   "ci95": {
+    "No authorization": [
+     0.9924,
+     1.0
+    ],
+    "Static API keys": [
+     0.9924,
+     1.0
+    ],
+    "OAuth bearer (forwarded)": [
+     0.0,
+     0.0076
+    ],
+    "OAuth + token exchange": [
+     0.0,
+     0.0076
+    ],
+    "Warrant, no PoP": [
+     0.0,
+     0.0076
+    ],
+    "Warrant, ingress only": [
+     0.0,
+     0.0076
+    ],
+    "NLIP-Warrant": [
+     0.0,
+     0.0076
+    ]
+   }
+  },
+  {
+   "key": "A13",
+   "title": "Audience redirection",
+   "group": "ingress",
+   "residual": false,
+   "success": {
+    "No authorization": 1.0,
+    "Static API keys": 0.0,
+    "OAuth bearer (forwarded)": 1.0,
+    "OAuth + token exchange": 0.0,
+    "Warrant, no PoP": 0.0,
+    "Warrant, ingress only": 0.0,
+    "NLIP-Warrant": 0.0
+   },
+   "ci95": {
+    "No authorization": [
+     0.9924,
+     1.0
+    ],
+    "Static API keys": [
+     0.0,
+     0.0076
+    ],
+    "OAuth bearer (forwarded)": [
+     0.9924,
+     1.0
+    ],
+    "OAuth + token exchange": [
+     0.0,
+     0.0076
+    ],
+    "Warrant, no PoP": [
+     0.0,
+     0.0076
+    ],
+    "Warrant, ingress only": [
+     0.0,
+     0.0076
+    ],
+    "NLIP-Warrant": [
+     0.0,
+     0.0076
+    ]
+   }
+  },
+  {
+   "key": "A14",
+   "title": "Forged revocation (DoS)",
+   "group": "ingress",
+   "residual": false,
+   "success": {
+    "No authorization": 0.0,
+    "Static API keys": 0.0,
+    "OAuth bearer (forwarded)": 0.0,
+    "OAuth + token exchange": 0.0,
+    "Warrant, no PoP": 0.0,
+    "Warrant, ingress only": 0.0,
+    "NLIP-Warrant": 0.0
+   },
+   "ci95": {
+    "No authorization": [
+     0.0,
+     0.0076
+    ],
+    "Static API keys": [
+     0.0,
+     0.0076
+    ],
+    "OAuth bearer (forwarded)": [
+     0.0,
+     0.0076
+    ],
+    "OAuth + token exchange": [
+     0.0,
+     0.0076
+    ],
+    "Warrant, no PoP": [
+     0.0,
+     0.0076
+    ],
+    "Warrant, ingress only": [
+     0.0,
+     0.0076
+    ],
+    "NLIP-Warrant": [
+     0.0,
+     0.0076
+    ]
+   }
+  },
+  {
+   "key": "R1",
+   "title": "In-bound misuse (residual)",
+   "group": "\u2014",
+   "residual": true,
+   "success": {
+    "No authorization": 1.0,
+    "Static API keys": 1.0,
+    "OAuth bearer (forwarded)": 1.0,
+    "OAuth + token exchange": 1.0,
+    "Warrant, no PoP": 1.0,
+    "Warrant, ingress only": 1.0,
+    "NLIP-Warrant": 1.0
+   },
+   "ci95": {
+    "No authorization": [
+     0.9924,
+     1.0
+    ],
+    "Static API keys": [
+     0.9924,
+     1.0
+    ],
+    "OAuth bearer (forwarded)": [
+     0.9924,
+     1.0
+    ],
+    "OAuth + token exchange": [
+     0.9924,
+     1.0
+    ],
+    "Warrant, no PoP": [
+     0.9924,
+     1.0
+    ],
+    "Warrant, ingress only": [
+     0.9924,
+     1.0
+    ],
+    "NLIP-Warrant": [
+     0.9924,
+     1.0
+    ]
+   }
+  }
+ ],
+ "latency": {
+  "platform": {
+   "python": "3.12.16",
+   "machine": "x86_64",
+   "cpu": "Intel(R) Xeon(R) Processor",
+   "cores": 8
+  },
+  "by_depth": [
+   {
+    "depth": 1,
+    "warrant_bytes": 605,
+    "proof_bytes": 437,
+    "verify_us": 134.1,
+    "ingress_us": 289.3,
+    "ingress_p95_us": 395.0,
+    "tool_us": 12.2
+   },
+   {
+    "depth": 2,
+    "warrant_bytes": 1114,
+    "proof_bytes": 437,
+    "verify_us": 275.5,
+    "ingress_us": 429.3,
+    "ingress_p95_us": 504.4,
+    "tool_us": 12.8
+   },
+   {
+    "depth": 3,
+    "warrant_bytes": 1623,
+    "proof_bytes": 437,
+    "verify_us": 402.3,
+    "ingress_us": 568.7,
+    "ingress_p95_us": 663.2,
+    "tool_us": 12.8
+   },
+   {
+    "depth": 4,
+    "warrant_bytes": 2133,
+    "proof_bytes": 437,
+    "verify_us": 531.4,
+    "ingress_us": 692.7,
+    "ingress_p95_us": 794.6,
+    "tool_us": 14.2
+   },
+   {
+    "depth": 5,
+    "warrant_bytes": 2642,
+    "proof_bytes": 437,
+    "verify_us": 651.0,
+    "ingress_us": 815.4,
+    "ingress_p95_us": 937.8,
+    "tool_us": 14.2
+   },
+   {
+    "depth": 6,
+    "warrant_bytes": 3151,
+    "proof_bytes": 437,
+    "verify_us": 787.7,
+    "ingress_us": 964.3,
+    "ingress_p95_us": 1122.3,
+    "tool_us": 15.1
+   },
+   {
+    "depth": 7,
+    "warrant_bytes": 3661,
+    "proof_bytes": 437,
+    "verify_us": 830.4,
+    "ingress_us": 1019.4,
+    "ingress_p95_us": 1228.7,
+    "tool_us": 14.9
+   },
+   {
+    "depth": 8,
+    "warrant_bytes": 4170,
+    "proof_bytes": 437,
+    "verify_us": 971.7,
+    "ingress_us": 1129.2,
+    "ingress_p95_us": 1323.6,
+    "tool_us": 14.9
+   }
+  ],
+  "bearer_hmac_us": 3.0,
+  "http": {
+   "depth1": {
+    "plain": {
+     "median_us": 351.1,
+     "p95_us": 426.4,
+     "mean_us": 360.2,
+     "n": 1000
+    },
+    "guarded": {
+     "median_us": 801.5,
+     "p95_us": 954.4,
+     "mean_us": 845.8,
+     "n": 1000
+    },
+    "overhead_median_us": 450.4
+   },
+   "depth3": {
+    "plain": {
+     "median_us": 356.2,
+     "p95_us": 439.7,
+     "mean_us": 365.0,
+     "n": 1000
+    },
+    "guarded": {
+     "median_us": 1101.3,
+     "p95_us": 1280.6,
+     "mean_us": 1131.7,
+     "n": 1000
+    },
+    "overhead_median_us": 745.1
+   }
+  }
+ }
+}
