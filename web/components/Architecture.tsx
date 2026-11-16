@@ -6,24 +6,24 @@ const nodes = [
     name: "Concierge",
     sub: "planner agent",
     chips: [
-      ["sky", "ingress SE"],
-      ["violet", "egress SE"],
+      ["sky", "Type-1 ingress"],
+      ["violet", "Type-2 egress"],
     ],
   },
   {
     name: "Procurement",
     sub: "router agent",
     chips: [
-      ["sky", "ingress SE"],
-      ["violet", "egress SE"],
+      ["sky", "Type-2 ingress"],
+      ["violet", "Type-2 egress"],
     ],
   },
   {
     name: "Payments",
     sub: "tool executor",
     chips: [
-      ["sky", "ingress SE"],
-      ["emerald", "Type-3 tool SE"],
+      ["sky", "Type-2 ingress"],
+      ["emerald", "Type-3 tool boundary"],
     ],
   },
 ] as const;
